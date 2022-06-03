@@ -19,4 +19,6 @@ const dbConfig: TypeOrmModuleOptions = {
   migrations: [`${__dirname}/migration/*.{ts,js}`]
 }
 
+console.log('dbConfig', dbConfig)
+
 export default dbConfig
