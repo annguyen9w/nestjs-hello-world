@@ -1,5 +1,8 @@
-import 'dotenv/config'
+import * as path from 'path'
+import * as dotenv from 'dotenv'
 import type { TypeOrmModuleOptions } from '@nestjs/typeorm'
+
+dotenv.config({ path: path.join(process.cwd(), '.env') })
 
 const dbConfig: TypeOrmModuleOptions = {
   type: 'postgres',
